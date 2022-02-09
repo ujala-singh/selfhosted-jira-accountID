@@ -13,7 +13,7 @@ class Jira {
 
   async getAccountID (useremail) {
     return this.fetch('getAccountID', {
-      pathname: `/rest/api/2/user/search?query=ujala.singh@razorpay.com`,
+      pathname: `/rest/api/2/user/search?query=${useremail}`,
     }, {
       method: 'GET',
     })
