@@ -1,5 +1,5 @@
 {
-  "name": "accountID",
+  "name": "accountid",
   "version": "1.0.0",
   "description": "Get AccountID of the User",
   "main": "index.js",
@@ -25,11 +25,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ujala-singh/selfhosted-jira-assignee.git"
+    "url": "git+https://github.com/ujala-singh/selfhosted-jira-accountID.git"
   },
   "keywords": [],
   "bugs": {
-    "url": "https://github.com/ujala-singh/selfhosted-jira-assignee/issues"
+    "url": "https://github.com/ujala-singh/selfhosted-jira-accountID/issues"
   },
-  "homepage": "https://github.com/ujala-singh/selfhosted-jira-assignee#readme"
+  "homepage": "https://github.com/ujala-singh/selfhosted-jira-accountID#readme"
 }
