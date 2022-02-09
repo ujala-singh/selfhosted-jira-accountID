@@ -14,10 +14,11 @@ module.exports = class {
   }
 
   async execute () {
-    const useremail = this.argv.useremail
+    const { argv } = this
 
-    console.log(`Get AccountID of ${useremail}.`)
-    const id = await this.Jira.getAccountID(useremail)
+    const email = argv.useremail
+    console.log(`Get AccountID of ${email}.`)
+    const id = await this.Jira.getAccountID(email)
     const accountId  = id.accountId
     return { accountID: id.accountId }
   }
