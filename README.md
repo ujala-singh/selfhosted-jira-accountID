@@ -1,5 +1,4 @@
-# Jira Assignee
-Add an Assignee to an issue
+# Jira User AccountID
 
 For examples on how to use this, check out the [gajira-demo](https://github.com/atlassian/gajira-demo) repository
 > ##### Only supports Jira Cloud. Does not support Jira Server (hosted)
@@ -11,11 +10,10 @@ For examples on how to use this, check out the [gajira-demo](https://github.com/
 To add assignee to an issue you need to specify an issue key and a comment as action inputs, like:
 
 ```yaml
-- name: Comment on issue
-  uses: ujala-singh/selfhosted-jira-assignee@master
+- name: AccountID of the USer
+  uses: ujala-singh/selfhosted-jira-accountID@master
   with:
-  issue: IFRA-2
-  assignee: ujala.singh
+  useremail: myuser@domain.com
 ```
 
 ----
@@ -25,11 +23,10 @@ To add assignee to an issue you need to specify an issue key and a comment as ac
 - None
 
 ### Inputs
-- `issue` - An issue key to add a comment for
-- `assignee` - Assignee
+- `useremail` - Email of the USer
 
 ### Outputs
-- None
+- `accountID` - Account ID of the USer
 
 ### Reads fields from config file at $HOME/jira/config.yml
 - `issue`
