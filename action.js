@@ -15,8 +15,8 @@ module.exports = class {
 
   async execute () {
     const { argv } = this
-
     const email = argv.useremail
+    
     console.log(`Get AccountID of ${email}.`)
     const id = await this.Jira.getAccountID(email)
     const accountId  = id.accountId

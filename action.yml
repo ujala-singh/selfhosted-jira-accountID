@@ -1,11 +1,11 @@
-name: Jira Add Assignee
-description: Add an assignee to an issue
+name: Jira User AccountID
+description: Get AccountID of the JIRA User
 branding:
-  icon: 'align-left'
+  icon: 'check-square'
   color: 'blue'
 inputs:
   useremail:
-    description: Email Of the user
+    description: Email of the user
     required: true
 outputs:
   accountID:
