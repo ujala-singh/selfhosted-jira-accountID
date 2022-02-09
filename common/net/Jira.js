@@ -12,7 +12,7 @@ class Jira {
   }
 
   async getAccountID (useremail) {
-    return this.fetch('getIssueTransitions', {
+    return this.fetch('getAccountID', {
       pathname: `/rest/api/2/user/search?query=${useremail}`,
     }, {
       method: 'GET',

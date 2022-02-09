@@ -23,10 +23,10 @@ To add assignee to an issue you need to specify an issue key and a comment as ac
 - None
 
 ### Inputs
-- `useremail` - Email of the USer
+- `useremail` - Email of the User
 
 ### Outputs
-- `accountID` - Account ID of the USer
+- `accountID` - Account ID of the User
 
 ### Reads fields from config file at $HOME/jira/config.yml
 - `issue`
