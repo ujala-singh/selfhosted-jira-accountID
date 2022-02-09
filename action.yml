@@ -1,0 +1,15 @@
+name: Jira Add Assignee
+description: Add an assignee to an issue
+branding:
+  icon: 'align-left'
+  color: 'blue'
+inputs:
+  useremail:
+    description: Email Of the user
+    required: true
+outputs:
+  accountID:
+    description: accountID of the user
+runs:
+  using: 'node12'
+  main: './dist/index.js'
