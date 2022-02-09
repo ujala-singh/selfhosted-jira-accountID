@@ -36,8 +36,7 @@ async function exec () {
 
 function parseArgs () {
   return {
-    issue: core.getInput('issue'),
-    assignee: core.getInput('assignee')
+    usermail: core.getInput('usermail')
   }
 }
 

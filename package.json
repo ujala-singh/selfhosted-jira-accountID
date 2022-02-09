@@ -1,35 +1,20 @@
 {
-  "name": "assignee",
+  "name": "selfhosted-jira-accountid",
   "version": "1.0.0",
-  "description": "Add an Assignee to an issue",
+  "description": "For examples on how to use this, check out the [gajira-demo](https://github.com/atlassian/gajira-demo) repository > ##### Only supports Jira Cloud. Does not support Jira Server (hosted)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "ncc build index.js --minify",
-    "watch": "ncc build index.js --watch --minify"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "@actions/core": "^1.6.0",
-    "@actions/github": "^5.0.0",
-    "lodash": "^4.17.11",
-    "moment": "^2.24.0",
-    "node-fetch": "^2.3.0",
-    "yaml": "^1.3.2"
-  },
-  "devDependencies": {
-    "@atlassian-partner-engineering/eslint-config": "^2.3.2",
-    "@zeit/ncc": "^0.20.4",
-    "eslint": "^5.13.0"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ujala-singh/selfhosted-jira-assignee.git"
+    "url": "git+https://github.com/ujala-singh/selfhosted-jira-accountID.git"
   },
   "keywords": [],
+  "author": "",
+  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ujala-singh/selfhosted-jira-assignee/issues"
+    "url": "https://github.com/ujala-singh/selfhosted-jira-accountID/issues"
   },
-  "homepage": "https://github.com/ujala-singh/selfhosted-jira-assignee#readme"
+  "homepage": "https://github.com/ujala-singh/selfhosted-jira-accountID#readme"
 }
