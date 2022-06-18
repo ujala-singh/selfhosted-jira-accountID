@@ -22,58 +22,6 @@ class Jira {
     })
   }
 
-  async addComment (issueId, data) {
-    return this.fetch('addComment', {
-      pathname: `/rest/api/2/issue/${issueId}/comment`,
-    }, {
-      method: 'POST',
-      body: data,
-    })
-  }
-
-  async createIssue (body) {
-    return this.fetch('createIssue',
-      { pathname: '/rest/api/2/issue' },
-      { method: 'POST', body })
-  }
-
-  async getIssue (issueId, query = {}) {
-    const { fields = [], expand = [] } = query
-
-    try {
-      return this.fetch('getIssue', {
-        pathname: `/rest/api/2/issue/${issueId}`,
-        query: {
-          fields: fields.join(','),
-          expand: expand.join(','),
-        },
-      })
-    } catch (error) {
-      if (get(error, 'res.status') === 404) {
-        return
-      }
-
-      throw error
-    }
-  }
-
-  async getIssueTransitions (issueId) {
-    return this.fetch('getIssueTransitions', {
-      pathname: `/rest/api/2/issue/${issueId}/transitions`,
-    }, {
-      method: 'GET',
-    })
-  }
-
-  async transitionIssue (issueId, data) {
-    return this.fetch('transitionIssue', {
-      pathname: `/rest/api/3/issue/${issueId}/transitions`,
-    }, {
-      method: 'POST',
-      body: data,
-    })
-  }
-
   async fetch (apiMethodName,
     { host, pathname, query },
     { method, body, headers = {} } = {}) {

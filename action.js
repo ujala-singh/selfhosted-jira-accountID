@@ -19,6 +19,6 @@ module.exports = class {
     console.log(`Get AccountID of ${email}.`)
     const id = await this.Jira.getAccountID(email)
     const accountId  = id.accountId
-    return { accountID: id.accountId }
+    return { accountId: id.accountId }
   }
 }
