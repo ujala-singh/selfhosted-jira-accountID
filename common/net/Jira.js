@@ -14,7 +14,9 @@ class Jira {
   async getAccountID (useremail) {
     return this.fetch('getAccountID', {
       pathname: `/rest/api/2/user/search`,
-      query: `query=${useremail}`,
+      query: {
+        query: `${useremail}`
+      },
     }, {
       method: 'GET',
     })
