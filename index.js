@@ -26,7 +26,7 @@ async function exec () {
       return
     }
 
-    console.log('Failed to Assign an issue.')
+    console.log('Failed to get accountID.')
     process.exit(78)
   } catch (error) {
     console.error(error)
@@ -36,7 +36,7 @@ async function exec () {
 
 function parseArgs () {
   return {
-    usermail: core.getInput('usermail')
+    useremail: core.getInput('useremail')
   }
 }
 
