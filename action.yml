@@ -1,7 +1,7 @@
 name: Jira User AccountID
 description: Get AccountID of the JIRA User
 branding:
-  icon: 'check-square'
+  icon: 'align-left'
   color: 'blue'
 inputs:
   useremail:
